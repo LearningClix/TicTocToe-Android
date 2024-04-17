@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@color/teal_700"
+    tools:context=".SplashScreen">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:rowCount="2">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:lottie_rawRes="@raw/tictactoa"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/splashScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Tic Toc Toe"
+        android:layout_marginBottom="80dp"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:textColor="#DC2929"
+        />
+
+</LinearLayout>
